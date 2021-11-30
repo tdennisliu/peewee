@@ -13,7 +13,7 @@ from playhouse.cockroachdb import CockroachDatabase
 from playhouse.reflection import *
 
 
-HEADER = """from peewee import *%s
+HEADER = """import peewee as pw%s
 
 database = %s('%s'%s)
 """

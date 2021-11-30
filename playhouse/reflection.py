@@ -141,7 +141,7 @@ class Column(object):
 
         param_str = ', '.join('%s=%s' % (k, v)
                               for k, v in sorted(field_params.items()))
-        field = '%s = %s(%s)' % (
+        field = '%s = pw.%s(%s)' % (
             self.name,
             self.field_class.__name__,
             param_str)
